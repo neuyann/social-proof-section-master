@@ -125,7 +125,7 @@ span {
   color: var(--var-soft-pink);
 }
 
-#textcontainer {
+.textcontainer {
   margin: 20px 13px 10px 0;
   line-height: 1.4;
   font-size: 15px;
