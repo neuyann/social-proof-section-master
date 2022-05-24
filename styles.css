@@ -28,7 +28,7 @@ body{
 }
 
 main{
-  padding: 105px 160px 115px 160px;
+  padding: 115px 170px 115px 170px;
 }
 
 .content{
@@ -37,7 +37,7 @@ main{
 
 .content h1{
   color: var(--var-very-dark-magenta);
-  font-size: 3em;
+  font-size: 3.1em;
   margin: 0 30px 20px 0;
 }
 
