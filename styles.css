@@ -1,1 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=League+Spartan:wght@500;700&family=Lexend+Deca&display=swap');
 
+
+
+:root{
+   --var-very-dark-magenta: hsl(300, 43%, 22%);
+   --var-soft-pink: hsl(333, 80%, 67%);
+   --var-dark-grayish-magenta: hsl(303, 10%, 53%);
+   --var-light-grayish-magenta: hsl(300, 24%, 96%);
+   --var-white-: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+
+body{
+  font-family: League Spartan;
+  background-image: url('https://raw.githubusercontent.com/neuyann/social-proof-section-master/1ae1fa47b6818e9e521f8f9728fcb6a9366765aa/images/bg-pattern-top-desktop.svg'), url('https://raw.githubusercontent.com/neuyann/social-proof-section-master/1ae1fa47b6818e9e521f8f9728fcb6a9366765aa/images/bg-pattern-bottom-desktop.svg');
+ background-position: top left , bottom right;
+ background-repeat: no-repeat;
+}
+
+main{
+  padding: 105px 135px 115px 135px;
+}
+
+.content{
+  width: 430px; 
+}
+
+.content h1{
+  color: var(--var-very-dark-magenta);
+  font-size: 3em;
+  margin: 0 30px 20px 0;
+}
+
+.content p {
+  color: var(--var-dark-grayish-magenta);
+  margin: 0 30px 40px 0;
+  line-height: 1.3;
+}
+
+.floatratings{
+  position: absolute;
+  top: 105px;
+  right: 260px;
+  padding: 20px;
+}
+
+.ratings{
+  display: flex;
+  flex-direction: column;
+  color:  var(--var-very-dark-magenta);
+}
+
+img{
+  margin: 3px;
+  width: 15px;
+}
+
+.firstrating, .secondrating, .thirdrating{
+  background: var(--var-light-grayish-magenta);
+  width: 370px;
+  height: 45px;
+  margin: 7px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  display:flex;
+  align-items: center;
+}
+.ratingtext {
+  display: inline;
+  margin: 15px;
+}
+.secondrating{
+  position: relative;
+  right: -40px;
+  
+}
+
+.thirdrating {
+  position: relative;
+  right: -80px;
+}
+
+.downcontainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  
+}
+
+.firstcontainer, .secondcontainer, .thirdcontainer{
+  background: var(--var-very-dark-magenta);
+  color: var(--var-white-);
+  border-radius: 10px;
+  padding: 29px;
+  width: 330px;
+  height: 220px;
+}
+
+.firstcontainer, .secondcontainer{
+  margin-right: 28px;
+}
+
+.secondcontainer{
+  position: relative;
+  top: 15px;
+}
+
+.thirdcontainer{
+  position: relative;
+  top: 30px;
+}
+span {
+  color: var(--var-soft-pink);
+}
+
+#textcontainer {
+  margin: 20px 13px 10px 0;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.headcontainer{
+  display: flex;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.imgprofile{
+  width: 35px;
+  border-radius: 35px;
+  
+}
+
+.headcontainer p{
+  margin-left: 20px; 
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+
+/* mobile version */
+
+@media (max-width: 1115px) {
+  body{
+    background-image: url('https://raw.githubusercontent.com/neuyann/social-proof-section-master/1ae1fa47b6818e9e521f8f9728fcb6a9366765aa/images/bg-pattern-top-mobile.svg'), url('https://raw.githubusercontent.com/neuyann/social-proof-section-master/1ae1fa47b6818e9e521f8f9728fcb6a9366765aa/images/bg-pattern-bottom-mobile.svg');} 
+  main{
+    padding: 15px;
+    text-align: center;
+  }
+  .floatratings{
+    position: static;
+    margin: 0;
+  }
+  .secondrating, .thirdrating {
+    position: static;
+  }
+  
+  .downcontainer{
+    flex-direction: column;
+    margin: 0px;
+  }
+  
+  .firstcontainer, .secondcontainer, .thirdcontainer{
+    width: 100%;
+    text-align: start;
+    margin-right: 0;
+  }
+  .floatratings{
+    padding: 0;
+    margin-bottom: 20px;
+    
+  }
+  .firstrating, .secondrating, .thirdrating{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    display: block;
+  }
+  .ratingtext{
+    display: block;
+  }
+  img{
+    width: 18px;
+    margin: 5px;
+  }
+  
+  .content{
+    width: auto;
+    text-align: center;
+  }
+}
